@@ -1,0 +1,6 @@
+2021-10-14 04:32:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-406G73C with PID 31820 (C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service\target\classes started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
+2021-10-14 04:32:00 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-10-14 04:32:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.884 seconds (JVM running for 3.11)
+2021-10-14 04:32:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-10-14 04:32:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-10-14 04:32:01 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!

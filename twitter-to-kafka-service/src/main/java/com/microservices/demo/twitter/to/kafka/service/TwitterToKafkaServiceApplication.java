@@ -14,12 +14,12 @@ import java.util.Arrays;
 @ComponentScan(basePackages = "com.microservices.demo")
 public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
-    private static final Logger LOG = LoggerFactory.getLogger(TwitterToKafkaServiceApplication.class);
+    private static final Logger LOG = LoggerFactory.getLogger(TwitterToKafkaServiceApplication.class); //log variable for logging
 
-    private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
+    private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData; 
 
-    public TwitterToKafkaServiceApplication(TwitterToKafkaServiceConfigData configData) {
-        this.twitterToKafkaServiceConfigData = configData;
+    public TwitterToKafkaServiceApplication(TwitterToKafkaServiceConfigData configData) {  //inject it to this class using constructor inyection because allows the bean to be inmutable
+        this.twitterToKafkaServiceConfigData = configData;                                 // since you can define the property as final. Inmutable objects helps to create more robust and thread safe apps
     }
 
     public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        LOG.info("App starts...");
+        LOG.info("App starts..."); //since we use info level we will se this message on the console
         LOG.info(Arrays.toString(twitterToKafkaServiceConfigData.getTwitterKeywords().toArray(new String[] {})));
         LOG.info(twitterToKafkaServiceConfigData.getWelcomeMessage());
     }
