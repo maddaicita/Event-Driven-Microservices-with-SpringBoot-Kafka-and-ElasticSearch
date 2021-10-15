@@ -1,7 +1,7 @@
 twitter-to-kafka-service:
   twitter-keywords:
-    - Java
-    - Microservices
-    - Kafka
-    - Elasticsearch
+    - PatriaYVida
+	- EnCubaHayUnaDictadura 
+    - 15NovCuba
+    - LibertadParaCuba
   welcome-message: Hello microservices!

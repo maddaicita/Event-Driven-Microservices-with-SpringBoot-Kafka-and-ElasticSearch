@@ -4,3 +4,285 @@
 2021-10-15 00:46:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
 2021-10-15 00:46:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
 2021-10-15 00:46:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2021-10-15 04:22:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests], using SpringBootContextLoader
+2021-10-15 04:22:29 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-15 04:22:29 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-15 04:22:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2021-10-15 04:22:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-15 04:22:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@77b14724, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5d9b7a8a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1e8ce150, org.springframework.test.context.support.DirtiesContextTestExecutionListener@604f2bd2, org.springframework.test.context.event.EventPublishingTestExecutionListener@1d3ac898, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b73be9f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@628c4ac0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7b84fcf8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@30b19518, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@363042d7, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@366ac49b]
+2021-10-15 04:22:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Starting TwitterToKafkaServiceApplicationTests on DESKTOP-406G73C with PID 11296 (started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
+2021-10-15 04:22:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - No active profile set, falling back to default profiles: default
+2021-10-15 04:22:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Started TwitterToKafkaServiceApplicationTests in 1.365 seconds (JVM running for 3.118)
+2021-10-15 04:22:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-10-15 04:22:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-10-15 04:22:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2021-10-15 04:22:31 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-15 04:22:31 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Kafka, Elasticsearch]
+2021-10-15 04:22:32 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2021-10-15 04:22:32 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 10000 milliseconds
+2021-10-15 04:22:32 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream!
+2021-10-15 04:23:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-406G73C with PID 8644 (C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service\target\classes started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
+2021-10-15 04:23:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-10-15 04:23:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.644 seconds (JVM running for 2.468)
+2021-10-15 04:23:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-10-15 04:23:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-10-15 04:23:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2021-10-15 04:23:13 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-15 04:23:13 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Kafka, Elasticsearch]
+2021-10-15 04:23:14 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2021-10-15 04:23:14 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 10000 milliseconds
+2021-10-15 04:23:24 [Twitter Stream consumer /  [1][Waiting for 10000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-15 04:23:24 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2021-10-15 04:23:24 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 20000 milliseconds
+2021-10-15 04:23:44 [Twitter Stream consumer /  [1][Waiting for 20000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-15 04:23:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2021-10-15 04:23:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 40000 milliseconds
+2021-10-15 04:28:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-406G73C with PID 11860 (C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service\target\classes started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
+2021-10-15 04:28:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-10-15 04:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.46 seconds (JVM running for 2.158)
+2021-10-15 04:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-10-15 04:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2021-10-15 04:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2021-10-15 04:28:37 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-15 04:28:37 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Kafka, Elasticsearch]
+2021-10-15 04:28:42 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-10-15 04:28:42 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-10-15 04:28:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDK45VP
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC…
+2021-10-15 04:28:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pisiko_bilim: Franz Kafka ”Biraz daha uyusam bütün bu olanlardan kurtulabilir miyim?” derken Jean Paul Sartre şöyle der "Uyursan gece b…
+2021-10-15 04:28:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text உன் தொப்புள் ஒட்டைய பாரத்த பிறகு ஒத்த உன்னை தான் முதலில் ஒக்கனும் இருக்கேன் வா உன் இரண்டு முழகலயும் பிடித்து நன்றாக கசக்கி பிழிந்து சப்பி சப்பி சப்பி சப்பி சப்பி சப்பி சப்பி சப்பி🍼 பால் குடிக்க வேண்டும்,uum
+#100DaysOfCode #javascript  #java #linux #WomenWhoCode #Python, #flutter https://t.co/tMe0AUKjhK
+2021-10-15 04:28:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Need help with your assignments?
+We deliver the best services in:
+#Java
+#Economics
+#Python
+#Proposals
+#Computerscience
+#Onlineclass
+#homeworkslave
+#UniversityofVirginia
+#Holocaust
+#Brady
+KINDLY DM https://t.co/SZgqOjbInQ
+2021-10-15 04:28:53 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @raja00710: உன் தொப்புள் ஒட்டைய பாரத்த பிறகு ஒத்த உன்னை தான் முதலில் ஒக்கனும் இருக்கேன் வா உன் இரண்டு முழகலயும் பிடித்து நன்றாக கசக்கி…
+2021-10-15 04:28:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JosePaumard: Episode 13 of Inside Java Newscast is out! Grab it while it's hot! #JDK17
+Java 17… more videos, UTF-8 by default in Java 1…
+2021-10-15 04:28:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @codeopinion: Blogged: Querying another service for data used for business logic? You're dealing with inconsistent data and likely misal…
+2021-10-15 04:28:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @raja00710: உன் தொப்புள் ஒட்டைய பாரத்த பிறகு ஒத்த உன்னை தான் முதலில் ஒக்கனும் இருக்கேன் வா உன் இரண்டு முழகலயும் பிடித்து நன்றாக கசக்கி…
+2021-10-15 04:29:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pisiko_bilim: Franz Kafka ”Biraz daha uyusam bütün bu olanlardan kurtulabilir miyim?” derken Jean Paul Sartre şöyle der "Uyursan gece b…
+2021-10-15 04:29:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @00arjan00 javascript / vuejs / nuxt in the frontend
+nodejs and java in the backend
+🧑‍💻
+2021-10-15 04:29:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @sertvurgular: Biriyle uzun uzun tartışmak yerine "tamam haklısın" deyip geçmek daha mantıklı gelmeye başladı. Franz Kafka'nın da dediği…
+2021-10-15 04:29:10 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @odersky: Very interesting article by @adamwarski: https://t.co/9uQTtgjL3O. The most comprehensive treatment of modern concurrency trend…
+2021-10-15 04:29:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JobPreference: NEED a JOB?
+Sign up now https://t.co/rMErDK45VP
+NO MIDDLEMAN. FREE OF CHARGE
+#Job #Java #Programming #Coding #100DaysofC…
+2021-10-15 04:29:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Wajahat64748562: I will be your web developer
+https://t.co/AYGIgbMnZ1
+#javascript #html #programming #coding #css #java #python #develo…
+2021-10-15 04:29:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Transkribus: @00arjan00 javascript / vuejs / nuxt in the frontend
+nodejs and java in the backend
+🧑‍💻
+2021-10-15 04:29:17 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @rosikone: @LucaSucci @Kapparar1 hanno riesumato Kafka per fare sto dcpm...
+2021-10-15 04:29:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pisiko_bilim: Franz Kafka ”Biraz daha uyusam bütün bu olanlardan kurtulabilir miyim?” derken Jean Paul Sartre şöyle der "Uyursan gece b…
+2021-10-15 04:29:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ❗ランキング：12位❗(マザーボード)
+
+「マザーボード ハイエンド向け X570搭載 Taichi X570-Taichi」
+メーカ:ASRock
+
+価格:¥43,310✨
+🔥売り切れ間近🔥(17:27)
+
+https://t.co/8B8ghe65m7
+2021-10-15 04:29:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text javaのフレームワークって何が多いんですかね？springしか知らんけど
+2021-10-15 04:29:36 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @tecInterviewhlp: Java collection cheatsheet 
+
+#BigData #Analytics #frontend #MachineLearning #CyberSecurity #Python #backend #Kubernete…
+2021-10-15 04:29:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 統合もJavaもある！！！！！！！！
+2021-10-15 04:29:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @desi_thug1: The great Borobudur Temple is the largest buddhist temple located in the Kedu Valley, in the southern part of Central Java,…
+2021-10-15 04:29:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pisiko_bilim: Franz Kafka ”Biraz daha uyusam bütün bu olanlardan kurtulabilir miyim?” derken Jean Paul Sartre şöyle der "Uyursan gece b…
+2021-10-15 04:29:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AryanVenkat: After working as a backend (Java) developer for 8 years, I decided to take a break from my job (for a few months)
+👨‍🏭So I'…
+2021-10-15 04:29:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Java SW designer, Carrot, Uusimaa https://t.co/6anH8od7fV #ohjelmointi #it #rekry https://t.co/mqz9OI2iBi
+2021-10-15 04:29:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JosePaumard: Episode 13 of Inside Java Newscast is out! Grab it while it's hot! #JDK17
+Java 17… more videos, UTF-8 by default in Java 1…
+2021-10-15 04:30:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Our support for more clouds including Google Cloud Platform and Microsoft Azure, and more databases incuding MongoDB, ElasticSearch and ClickHouse is on our product roadmap and will be rolled out in the near future. Stay tuned! https://t.co/17Ib3mafp7
+2021-10-15 04:30:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text eclipse2021版のjavaEEで画像を表示させようとしています。
+src /main /javaとかwebappとかはあるのですがwebContentとか無いですし、絶対パスで表示してみても相対パスで表示してみても、いろいろやってみましたが画像が表示されません。ヒントでいいので教えて下さい！
+2021-10-15 04:30:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @PrizmWorldwide1: PRIZM. Установка ноды призм -  на Windows.Установка java, utorrent и  за... https://t.co/hjKluuGiYI через @YouTube
+2021-10-15 04:30:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text javaか？javaが悪さしてるか？
+2021-10-15 04:30:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Mwituuuu Java*😂
+2021-10-15 04:30:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ランキング:2位「食品・飲料・お酒」(17:28)
+
+[Amazon限定ブランド]CCL い・ろ・は・すラベルレス 2LPET ×8本
+
+価格:￥998
+レビュー数:3,925
+https://t.co/m3eFjUrCuT
+2021-10-15 04:30:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @v_kurehamitora: 統合版、いろいろ違って新鮮で面白かった🎶
+画面酔いが憎い…🥺
+
+次回はJAVA版に戻って計画を進めます😘👍✨ https://t.co/0nG2BBDt0h
+2021-10-15 04:30:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pisiko_bilim: Franz Kafka ”Biraz daha uyusam bütün bu olanlardan kurtulabilir miyim?” derken Jean Paul Sartre şöyle der "Uyursan gece b…
+2021-10-15 04:30:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AryanVenkat: After working as a backend (Java) developer for 8 years, I decided to take a break from my job (for a few months)
+👨‍🏭So I'…
+2021-10-15 04:30:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text javaに関する情報を発信していきます！よろしくお願いします！
+＃java
+2021-10-15 04:30:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 値渡し、ポインター渡しというようにプログラミングする上で把握しておくと、不可解な事象が出たときに切り分けしやすい。
+
+#javascript
+#java
+#javascriptdeveloper
+#プログラミング勉強中 
+#プログラミング独学
+#駆け出しエンジニアと繋がりたい https://t.co/vSU8EAdBiv
+2021-10-15 04:30:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Marczyy Uh I'm cool  I love fnf and roblkx and Im a  budgey simp
+I'm dress up as java the guy who made funky friday I love gwmark and u r cool and uhh have a great day
+2021-10-15 04:30:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @restominnak: Uyudum, uyandım, uyudum, uyandım, kepaze bir yaşam.
+
+bu ara kafka ya  taktım 🌞
+Gunaydin // Rojbaş 🌺
+2021-10-15 04:30:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Pear78tv @Matthijs85 Franz Kafka draait zich om in zijn graf
+2021-10-15 04:30:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @restominnak: İnsanlar sabırsız oldukları için cennetten kovuldular, tembel oldukları için geri dönemiyorlar.
+
+ Demiş Kafka dayı neyseee…
+2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-406G73C with PID 14964 (C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service\target\classes started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
+2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.092 seconds (JVM running for 1.737)
+2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Patria Y Vida, 15n, Diazcanelsingao]
+2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2021-10-15 04:31:16 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Patria Y Vida, 15n, Diazcanelsingao]
+2021-10-15 04:31:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-10-15 04:31:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-10-15 04:31:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @aguacate_cubano: Rafa NO es un delincuente, no está solo! El régimen totalitario actúa con total impunidad, nos está devorando a todos.
+2021-10-15 04:31:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaAdn: https://t.co/tGFKNJbUAn https://t.co/tGFKNJbUAn?
+2021-10-15 04:32:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @TwiterCuba @UNICEFCuba @UNICEFenEspanol @unicef_es @UNICEFargentina @uniceflac @unicefvenezuela @unicefguatemala @ONU_es @cepal_onu @ONU_Cuba AHORA SI HAN DICHO LA VERDAD, ESOS CARRITOS LOS QUÉ SON HYUNDAI SON PARA REFORZAR LA UNIDAD DE PATRULLA, NO PARA EL TURISMO, VIVO FRENTE A ELLA Y LOS ESTÁN PREPARANDO BIEN PARA EL 15N, PERO BUENO ESO NO NOS ASUSTA, PERO NO FUERON CAPAZ DE PENSAR EN LOS MEDICAMENTOS NI AMBULANCIAS
+2021-10-15 04:32:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @aguacate_cubano: Rafa NO es un delincuente, no está solo! El régimen totalitario actúa con total impunidad, nos está devorando a todos.
+2021-10-15 04:32:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @rafrsr: Acaban de traerme una citación para "entrevista" mañana a las 10am en la 6ta. 
+
+Yo NO soy un delincuente, yo NO soy un terroris…
+2021-10-15 04:32:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @diariodecuba: La propaganda del régimen #cubano divulga 'fake news' para desacreditar a Yunior García, promotor de la Marcha Cívica por…
+2021-10-15 04:33:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @rafrsr: Acaban de traerme una citación para "entrevista" mañana a las 10am en la 6ta. 
+
+Yo NO soy un delincuente, yo NO soy un terroris…
+2021-10-15 04:33:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @MargaritaRepo: 🎥 Rendimos un sentido homenaje a todos los héroes de la patria que han entregado su vida por defender la nuestra.
+
+Todo…
+2021-10-15 04:33:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text "Hermosa mujer rural
+ejemplo de la campaña,
+que no tomen como hazaña
+lo que es tu vida normal
+Me das fuerza espiritual
+si tus quehaceres presencio
+y sin ser juez te sentencio,
+aunque es poco mi saber
+porque sos a mi entender,
+'la que hace Patria en silencio'
+#FelizDiaMujerRural
+2021-10-15 04:33:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-406G73C with PID 15544 (C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service\target\classes started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
+2021-10-15 04:33:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-10-15 04:33:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.541 seconds (JVM running for 2.34)
+2021-10-15 04:33:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2021-10-15 04:33:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [PatriaYVida, 15NovCuba, LibertadParaCuba]
+2021-10-15 04:33:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2021-10-15 04:33:44 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-15 04:33:44 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [PatriaYVida, 15NovCuba, LibertadParaCuba]
+2021-10-15 04:34:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-10-15 04:34:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-10-15 04:34:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #Cuba #SantiagoDeCuba
+
+El santiaguero Eloy fue citado y amenazado por la SE por ser firmante de la carta para marchar el #15N.
+Se recorrerá desde Parque de Céspedes hasta Plaza de Marte, por la calle Aguilera, Hora:2:00pm.
+https://t.co/e9NNb4XzZf
+
+#LibertadParaCuba
+#C40
+
+Dale RT https://t.co/pyBb66ugLD
+2021-10-15 04:34:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @joelglez74: Otra Mariana de estos tiempos.
+#Cuba merece LIBERTAD.
+
+#EnCubaHayUnaDictadura 
+#15NCuba
+#PatriaYVida
+2021-10-15 04:35:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FHPLuruguay: #SosCuba
+#PatriaYVida
+#ElParoVa 🇨🇺
+
+https://t.co/9iFhsTA5NT
+2021-10-15 04:36:36 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @uwinli: Hagamos que la Libertad no sea un sueño,sino nuestra Bandera.
+#RestituciónC40 
+#15NovCuba 
+#LibertadParaCuba https://t.co/levbk…
+2021-10-15 04:36:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ArbolInvertido: 🇨🇺 El régimen de #Cuba acude a la  militarización y al descrédito como  respuesta a la marcha del #15N.
+Vea los detalle…
+2021-10-15 04:36:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @uwinli: Hagamos que la Libertad no sea un sueño,sino nuestra Bandera.
+#RestituciónC40 
+#15NovCuba 
+#LibertadParaCuba https://t.co/levbk…
+2021-10-15 04:38:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @RolandoChamizo @AriDeCuba @iroelsanchez No se ve el fruto decesos trabajos, por eso hay que marchar#NoMasMentiras #NoMasDictadura #PatriaYVida #CubaUnida #ElPuebloLoQueQuiereEsLibertad #ElCambioEsYa #ManifestarseEsUnDerecho #DerechoATenerDerechos #15NCuba #AbajoElPCC #TodosSomosArchipielago
+2021-10-15 04:39:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @uwinli: Hagamos que la Libertad no sea un sueño,sino nuestra Bandera.
+#RestituciónC40 
+#15NovCuba 
+#LibertadParaCuba https://t.co/levbk…
+2021-10-15 04:39:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @uwinli: Hagamos que la Libertad no sea un sueño,sino nuestra Bandera.
+#RestituciónC40 
+#15NovCuba 
+#LibertadParaCuba https://t.co/levbk…
+2021-10-15 04:39:33 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @PadresFundador1 @AriDeCuba @iroelsanchez Si, si la miseria y seguir viendo a cuerpo de rey explotando al pueblo si, eso si les convence #AbajoElPCC #NoMasMentiras #NoMasDictadura #PatriaYVida
+2021-10-15 04:42:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #15NovCuba
+#EnCubaHayUnaDictadura 
+⚠️Definitivamente y ya lo tengo bien comprobado, está P|@T@FORM@ con su inteligencia artificial y algoritmo protege a estos grandísimos HP
+Con algunos hashtag y nombres le bajan la visualización a los twitts https://t.co/2Aufoiz9hG
+2021-10-15 04:43:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @joelglez74: Otra Mariana de estos tiempos.
+#Cuba merece LIBERTAD.
+
+#EnCubaHayUnaDictadura 
+#15NCuba
+#PatriaYVida
+2021-10-15 04:45:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Manumisin1: #15NovCuba
+#EnCubaHayUnaDictadura 
+⚠️Definitivamente y ya lo tengo bien comprobado, está P|@T@FORM@ con su inteligencia art…
