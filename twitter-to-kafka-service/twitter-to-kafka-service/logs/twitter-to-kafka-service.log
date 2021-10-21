@@ -1,299 +1,245 @@
-2021-10-15 00:46:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-406G73C with PID 11052 (C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service\target\classes started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
-2021-10-15 00:46:51 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-10-15 00:46:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.111 seconds (JVM running for 5.128)
-2021-10-15 00:46:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2021-10-15 00:46:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2021-10-15 00:46:53 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
-2021-10-15 04:22:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests], using SpringBootContextLoader
-2021-10-15 04:22:29 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-2021-10-15 04:22:29 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2021-10-15 04:22:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
-2021-10-15 04:22:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2021-10-15 04:22:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@77b14724, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5d9b7a8a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1e8ce150, org.springframework.test.context.support.DirtiesContextTestExecutionListener@604f2bd2, org.springframework.test.context.event.EventPublishingTestExecutionListener@1d3ac898, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b73be9f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@628c4ac0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7b84fcf8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@30b19518, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@363042d7, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@366ac49b]
-2021-10-15 04:22:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Starting TwitterToKafkaServiceApplicationTests on DESKTOP-406G73C with PID 11296 (started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
-2021-10-15 04:22:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - No active profile set, falling back to default profiles: default
-2021-10-15 04:22:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Started TwitterToKafkaServiceApplicationTests in 1.365 seconds (JVM running for 3.118)
-2021-10-15 04:22:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2021-10-15 04:22:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2021-10-15 04:22:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
-2021-10-15 04:22:31 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
-2021-10-15 04:22:31 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Kafka, Elasticsearch]
-2021-10-15 04:22:32 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
-<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
-</head>
-<body>
-<h2>HTTP ERROR: 401</h2>
-<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
-<pre>    Unauthorized</pre>
-</body>
-</html>
+2021-10-20 22:31:54 [Twitter Stream consumer /  [1][Receiving stream]] INFO  twitter4j.TwitterStreamImpl - Stream closed.
+2021-10-20 22:31:54 [Twitter Stream consumer /  [1][Receiving stream]] INFO  twitter4j.TwitterStreamImpl - Stream closed.
+2021-10-20 22:31:54 [Twitter Stream consumer /  [1][Receiving stream]] INFO  twitter4j.TwitterStreamImpl - Waiting for 250 milliseconds
+2021-10-20 22:31:54 [Twitter Stream consumer /  [1][Waiting for 250 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-20 22:31:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - stream.twitter.com
+2021-10-20 22:31:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 500 milliseconds
+2021-10-20 22:31:55 [Twitter Stream consumer /  [1][Waiting for 500 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-20 22:31:55 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - stream.twitter.com
+2021-10-20 22:31:55 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 1000 milliseconds
+2021-10-20 22:31:56 [Twitter Stream consumer /  [1][Waiting for 1000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-20 22:31:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - stream.twitter.com
+2021-10-20 22:31:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 2000 milliseconds
+2021-10-20 22:31:58 [Twitter Stream consumer /  [1][Waiting for 2000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-20 22:31:58 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - stream.twitter.com
+2021-10-20 22:31:58 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 4000 milliseconds
+2021-10-20 22:32:02 [Twitter Stream consumer /  [1][Waiting for 4000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-20 22:32:02 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - stream.twitter.com
+2021-10-20 22:32:02 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 8000 milliseconds
+2021-10-20 22:32:10 [Twitter Stream consumer /  [1][Waiting for 8000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-10-20 22:32:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-10-20 22:32:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-10-20 22:32:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @cubano4freedom: En menos de 24h han expulsado de su centro laboral a 2 profesionales, por el solo hecho de pensar diferente y querer un…
+2021-10-20 22:32:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @abdala_cuba: Es imposible que un artista esté en La Bienal de La Habana sabiendo que la dictadura amordaza, persigue y encierra a los a…
+2021-10-20 22:32:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FITNESSWILL20: Fernando Vazquez Guerra miembro de la #UNPACU en Camaguey Cuba acaba de ser detenido y llevado al cuartel de la segurida…
+2021-10-20 22:32:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Vaya potencia médica que tenemos en #Cuba que ni licuadoras para sus pacientes. 🤦🏻‍♂️ 
+#AbajoLaDictadura #SOSCuba @GHNorde…
+2021-10-20 22:32:52 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FITNESSWILL20: Dr .Manuel Guerra , acaba de recibir una citación de la Fiscalía Provincial en Holguín para mañana 21 de octubre. Fue se…
+2021-10-20 22:32:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @grisel8204: Primero lo expulsan al DrManuel y luego lo citan .. sin explicar el motivo... EN CUBA NO SE PUEDE PENSAR DIFERENTE .... #SO…
+2021-10-20 22:33:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @dqba: No esperes la marcha del #15NovCuba ACTÚA HOY  la dictadura asesina De Castro-@DiazCanelB  es nuestro objetivo. La libertad y pro…
+2021-10-20 22:33:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Kmikc90: #EnCubaHayUnaDictadura pura y dura #AbajoElComunismo #AbajoElPCC @ONU_es @parlamentoUE @mbachelet @CIDH @ONU_derechos @antonio…
+2021-10-20 22:33:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Debemos ver quienes son las dos fiscales holguineras que citaron a @Dr_ManuelG93 .Hacerles saber que todo tiene consecuencias. Ellas son  Dania Borras Santiesteban y Nadieska  Núñez Gumila  #YoQuieroUnCambio #EnCubaHayUnaDictadura #EnCubaHayPresosPoliticos #SOSCuba #PatriayVida
+2021-10-20 22:34:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @abdala_cuba: La dictadura se apresta a reprimir violentamente al pueblo el #15N
+Me acaban de decir que en las universidades están hacie…
+2021-10-20 22:34:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: ¿Alguien sabe que fue de la vida de la cámara que pusieron frente a la casa de @LMOAlcantara en San Isidro? 
+#AbajoLaDicta…
+2021-10-20 22:34:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FITNESSWILL20: Fernando Vazquez Guerra miembro de la #UNPACU en Camaguey Cuba acaba de ser detenido y llevado al cuartel de la segurida…
+2021-10-20 22:35:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ilianahcuba: La Patria es Cuba, el comunismo es una ideología extranjera que ha invadido el país, hay que expulsarla, los que se acogen…
+2021-10-20 22:35:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ilianahcuba: La Patria es Cuba, el comunismo es una ideología extranjera que ha invadido el país, hay que expulsarla, los que se acogen…
+2021-10-20 22:35:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RoannyLL: El comunismo envenenó el suelo fértil de la isla de #Cuba, en dictadura no florecen sueños de un futuro feliz, se precisa de…
+2021-10-20 22:35:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @cubano4freedom: En menos de 24h han expulsado de su centro laboral a 2 profesionales, por el solo hecho de pensar diferente y querer un…
+2021-10-20 22:35:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @cubano4freedom: En menos de 24h han expulsado de su centro laboral a 2 profesionales, por el solo hecho de pensar diferente y querer un…
+2021-10-20 22:35:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FITNESSWILL20: Dr .Manuel Guerra , acaba de recibir una citación de la Fiscalía Provincial en Holguín para mañana 21 de octubre. Fue se…
+2021-10-20 22:35:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ilianahcuba: La Patria es Cuba, el comunismo es una ideología extranjera que ha invadido el país, hay que expulsarla, los que se acogen…
+2021-10-20 22:35:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @yuyileal333: Buenos días, mi gente mambisa! Espero que estén bien! Fuerza! Estamos juntos por la Patria! #PatriaYVida
+2021-10-20 22:36:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mjorgec1994: ⚠️⚠️Acaban de expulsar al doctor Manuel Guerra de su centro de trabajo... es el segundo profesional expulsado en menos de…
+2021-10-20 22:36:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SanPablo1959: #15NCuba
 
-2021-10-15 04:22:32 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 10000 milliseconds
-2021-10-15 04:22:32 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream!
-2021-10-15 04:23:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-406G73C with PID 8644 (C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service\target\classes started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
-2021-10-15 04:23:12 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-10-15 04:23:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.644 seconds (JVM running for 2.468)
-2021-10-15 04:23:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2021-10-15 04:23:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2021-10-15 04:23:13 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
-2021-10-15 04:23:13 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
-2021-10-15 04:23:13 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Kafka, Elasticsearch]
-2021-10-15 04:23:14 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
-<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
-</head>
-<body>
-<h2>HTTP ERROR: 401</h2>
-<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
-<pre>    Unauthorized</pre>
-</body>
-</html>
+#TodosSomosArchipielago
 
-2021-10-15 04:23:14 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 10000 milliseconds
-2021-10-15 04:23:24 [Twitter Stream consumer /  [1][Waiting for 10000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
-2021-10-15 04:23:24 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
-<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
-</head>
-<body>
-<h2>HTTP ERROR: 401</h2>
-<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
-<pre>    Unauthorized</pre>
-</body>
-</html>
+#PatriaYVida, Grammy Si
 
-2021-10-15 04:23:24 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 20000 milliseconds
-2021-10-15 04:23:44 [Twitter Stream consumer /  [1][Waiting for 20000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
-2021-10-15 04:23:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
-<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
-</head>
-<body>
-<h2>HTTP ERROR: 401</h2>
-<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
-<pre>    Unauthorized</pre>
-</body>
-</html>
-
-2021-10-15 04:23:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 40000 milliseconds
-2021-10-15 04:28:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-406G73C with PID 11860 (C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service\target\classes started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
-2021-10-15 04:28:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-10-15 04:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.46 seconds (JVM running for 2.158)
-2021-10-15 04:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2021-10-15 04:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2021-10-15 04:28:37 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
-2021-10-15 04:28:37 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
-2021-10-15 04:28:37 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Kafka, Elasticsearch]
-2021-10-15 04:28:42 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
-2021-10-15 04:28:42 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
-2021-10-15 04:28:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JobPreference: NEED a JOB?
-Sign up now https://t.co/rMErDK45VP
-NO MIDDLEMAN. FREE OF CHARGE
-#Job #Java #Programming #Coding #100DaysofC…
-2021-10-15 04:28:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pisiko_bilim: Franz Kafka ”Biraz daha uyusam bütün bu olanlardan kurtulabilir miyim?” derken Jean Paul Sartre şöyle der "Uyursan gece b…
-2021-10-15 04:28:48 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text உன் தொப்புள் ஒட்டைய பாரத்த பிறகு ஒத்த உன்னை தான் முதலில் ஒக்கனும் இருக்கேன் வா உன் இரண்டு முழகலயும் பிடித்து நன்றாக கசக்கி பிழிந்து சப்பி சப்பி சப்பி சப்பி சப்பி சப்பி சப்பி சப்பி🍼 பால் குடிக்க வேண்டும்,uum
-#100DaysOfCode #javascript  #java #linux #WomenWhoCode #Python, #flutter https://t.co/tMe0AUKjhK
-2021-10-15 04:28:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Need help with your assignments?
-We deliver the best services in:
-#Java
-#Economics
-#Python
-#Proposals
-#Computerscience
-#Onlineclass
-#homeworkslave
-#UniversityofVirginia
-#Holocaust
-#Brady
-KINDLY DM https://t.co/SZgqOjbInQ
-2021-10-15 04:28:53 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @raja00710: உன் தொப்புள் ஒட்டைய பாரத்த பிறகு ஒத்த உன்னை தான் முதலில் ஒக்கனும் இருக்கேன் வா உன் இரண்டு முழகலயும் பிடித்து நன்றாக கசக்கி…
-2021-10-15 04:28:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JosePaumard: Episode 13 of Inside Java Newscast is out! Grab it while it's hot! #JDK17
-Java 17… more videos, UTF-8 by default in Java 1…
-2021-10-15 04:28:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @codeopinion: Blogged: Querying another service for data used for business logic? You're dealing with inconsistent data and likely misal…
-2021-10-15 04:28:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @raja00710: உன் தொப்புள் ஒட்டைய பாரத்த பிறகு ஒத்த உன்னை தான் முதலில் ஒக்கனும் இருக்கேன் வா உன் இரண்டு முழகலயும் பிடித்து நன்றாக கசக்கி…
-2021-10-15 04:29:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pisiko_bilim: Franz Kafka ”Biraz daha uyusam bütün bu olanlardan kurtulabilir miyim?” derken Jean Paul Sartre şöyle der "Uyursan gece b…
-2021-10-15 04:29:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @00arjan00 javascript / vuejs / nuxt in the frontend
-nodejs and java in the backend
-🧑‍💻
-2021-10-15 04:29:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @sertvurgular: Biriyle uzun uzun tartışmak yerine "tamam haklısın" deyip geçmek daha mantıklı gelmeye başladı. Franz Kafka'nın da dediği…
-2021-10-15 04:29:10 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @odersky: Very interesting article by @adamwarski: https://t.co/9uQTtgjL3O. The most comprehensive treatment of modern concurrency trend…
-2021-10-15 04:29:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JobPreference: NEED a JOB?
-Sign up now https://t.co/rMErDK45VP
-NO MIDDLEMAN. FREE OF CHARGE
-#Job #Java #Programming #Coding #100DaysofC…
-2021-10-15 04:29:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Wajahat64748562: I will be your web developer
-https://t.co/AYGIgbMnZ1
-#javascript #html #programming #coding #css #java #python #develo…
-2021-10-15 04:29:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Transkribus: @00arjan00 javascript / vuejs / nuxt in the frontend
-nodejs and java in the backend
-🧑‍💻
-2021-10-15 04:29:17 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @rosikone: @LucaSucci @Kapparar1 hanno riesumato Kafka per fare sto dcpm...
-2021-10-15 04:29:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pisiko_bilim: Franz Kafka ”Biraz daha uyusam bütün bu olanlardan kurtulabilir miyim?” derken Jean Paul Sartre şöyle der "Uyursan gece b…
-2021-10-15 04:29:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ❗ランキング：12位❗(マザーボード)
-
-「マザーボード ハイエンド向け X570搭載 Taichi X570-Taichi」
-メーカ:ASRock
-
-価格:¥43,310✨
-🔥売り切れ間近🔥(17:27)
-
-https://t.co/8B8ghe65m7
-2021-10-15 04:29:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text javaのフレームワークって何が多いんですかね？springしか知らんけど
-2021-10-15 04:29:36 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @tecInterviewhlp: Java collection cheatsheet 
-
-#BigData #Analytics #frontend #MachineLearning #CyberSecurity #Python #backend #Kubernete…
-2021-10-15 04:29:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 統合もJavaもある！！！！！！！！
-2021-10-15 04:29:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @desi_thug1: The great Borobudur Temple is the largest buddhist temple located in the Kedu Valley, in the southern part of Central Java,…
-2021-10-15 04:29:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pisiko_bilim: Franz Kafka ”Biraz daha uyusam bütün bu olanlardan kurtulabilir miyim?” derken Jean Paul Sartre şöyle der "Uyursan gece b…
-2021-10-15 04:29:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AryanVenkat: After working as a backend (Java) developer for 8 years, I decided to take a break from my job (for a few months)
-👨‍🏭So I'…
-2021-10-15 04:29:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Java SW designer, Carrot, Uusimaa https://t.co/6anH8od7fV #ohjelmointi #it #rekry https://t.co/mqz9OI2iBi
-2021-10-15 04:29:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JosePaumard: Episode 13 of Inside Java Newscast is out! Grab it while it's hot! #JDK17
-Java 17… more videos, UTF-8 by default in Java 1…
-2021-10-15 04:30:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Our support for more clouds including Google Cloud Platform and Microsoft Azure, and more databases incuding MongoDB, ElasticSearch and ClickHouse is on our product roadmap and will be rolled out in the near future. Stay tuned! https://t.co/17Ib3mafp7
-2021-10-15 04:30:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text eclipse2021版のjavaEEで画像を表示させようとしています。
-src /main /javaとかwebappとかはあるのですがwebContentとか無いですし、絶対パスで表示してみても相対パスで表示してみても、いろいろやってみましたが画像が表示されません。ヒントでいいので教えて下さい！
-2021-10-15 04:30:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @PrizmWorldwide1: PRIZM. Установка ноды призм -  на Windows.Установка java, utorrent и  за... https://t.co/hjKluuGiYI через @YouTube
-2021-10-15 04:30:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text javaか？javaが悪さしてるか？
-2021-10-15 04:30:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Mwituuuu Java*😂
-2021-10-15 04:30:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ランキング:2位「食品・飲料・お酒」(17:28)
-
-[Amazon限定ブランド]CCL い・ろ・は・すラベルレス 2LPET ×8本
-
-価格:￥998
-レビュー数:3,925
-https://t.co/m3eFjUrCuT
-2021-10-15 04:30:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @v_kurehamitora: 統合版、いろいろ違って新鮮で面白かった🎶
-画面酔いが憎い…🥺
-
-次回はJAVA版に戻って計画を進めます😘👍✨ https://t.co/0nG2BBDt0h
-2021-10-15 04:30:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pisiko_bilim: Franz Kafka ”Biraz daha uyusam bütün bu olanlardan kurtulabilir miyim?” derken Jean Paul Sartre şöyle der "Uyursan gece b…
-2021-10-15 04:30:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AryanVenkat: After working as a backend (Java) developer for 8 years, I decided to take a break from my job (for a few months)
-👨‍🏭So I'…
-2021-10-15 04:30:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text javaに関する情報を発信していきます！よろしくお願いします！
-＃java
-2021-10-15 04:30:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 値渡し、ポインター渡しというようにプログラミングする上で把握しておくと、不可解な事象が出たときに切り分けしやすい。
-
-#javascript
-#java
-#javascriptdeveloper
-#プログラミング勉強中 
-#プログラミング独学
-#駆け出しエンジニアと繋がりたい https://t.co/vSU8EAdBiv
-2021-10-15 04:30:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Marczyy Uh I'm cool  I love fnf and roblkx and Im a  budgey simp
-I'm dress up as java the guy who made funky friday I love gwmark and u r cool and uhh have a great day
-2021-10-15 04:30:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @restominnak: Uyudum, uyandım, uyudum, uyandım, kepaze bir yaşam.
-
-bu ara kafka ya  taktım 🌞
-Gunaydin // Rojbaş 🌺
-2021-10-15 04:30:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Pear78tv @Matthijs85 Franz Kafka draait zich om in zijn graf
-2021-10-15 04:30:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @restominnak: İnsanlar sabırsız oldukları için cennetten kovuldular, tembel oldukları için geri dönemiyorlar.
-
- Demiş Kafka dayı neyseee…
-2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-406G73C with PID 14964 (C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service\target\classes started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
-2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.092 seconds (JVM running for 1.737)
-2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Patria Y Vida, 15n, Diazcanelsingao]
-2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
-2021-10-15 04:31:16 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
-2021-10-15 04:31:16 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Patria Y Vida, 15n, Diazcanelsingao]
-2021-10-15 04:31:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
-2021-10-15 04:31:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
-2021-10-15 04:31:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @aguacate_cubano: Rafa NO es un delincuente, no está solo! El régimen totalitario actúa con total impunidad, nos está devorando a todos.
-2021-10-15 04:31:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaAdn: https://t.co/tGFKNJbUAn https://t.co/tGFKNJbUAn?
-2021-10-15 04:32:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @TwiterCuba @UNICEFCuba @UNICEFenEspanol @unicef_es @UNICEFargentina @uniceflac @unicefvenezuela @unicefguatemala @ONU_es @cepal_onu @ONU_Cuba AHORA SI HAN DICHO LA VERDAD, ESOS CARRITOS LOS QUÉ SON HYUNDAI SON PARA REFORZAR LA UNIDAD DE PATRULLA, NO PARA EL TURISMO, VIVO FRENTE A ELLA Y LOS ESTÁN PREPARANDO BIEN PARA EL 15N, PERO BUENO ESO NO NOS ASUSTA, PERO NO FUERON CAPAZ DE PENSAR EN LOS MEDICAMENTOS NI AMBULANCIAS
-2021-10-15 04:32:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @aguacate_cubano: Rafa NO es un delincuente, no está solo! El régimen totalitario actúa con total impunidad, nos está devorando a todos.
-2021-10-15 04:32:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @rafrsr: Acaban de traerme una citación para "entrevista" mañana a las 10am en la 6ta. 
-
-Yo NO soy un delincuente, yo NO soy un terroris…
-2021-10-15 04:32:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @diariodecuba: La propaganda del régimen #cubano divulga 'fake news' para desacreditar a Yunior García, promotor de la Marcha Cívica por…
-2021-10-15 04:33:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @rafrsr: Acaban de traerme una citación para "entrevista" mañana a las 10am en la 6ta. 
-
-Yo NO soy un delincuente, yo NO soy un terroris…
-2021-10-15 04:33:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @MargaritaRepo: 🎥 Rendimos un sentido homenaje a todos los héroes de la patria que han entregado su vida por defender la nuestra.
-
-Todo…
-2021-10-15 04:33:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text "Hermosa mujer rural
-ejemplo de la campaña,
-que no tomen como hazaña
-lo que es tu vida normal
-Me das fuerza espiritual
-si tus quehaceres presencio
-y sin ser juez te sentencio,
-aunque es poco mi saber
-porque sos a mi entender,
-'la que hace Patria en silencio'
-#FelizDiaMujerRural
-2021-10-15 04:33:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-406G73C with PID 15544 (C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service\target\classes started by Maday in C:\Users\Maday\Git projects\microservices-demo\twitter-to-kafka-service)
-2021-10-15 04:33:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-10-15 04:33:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.541 seconds (JVM running for 2.34)
-2021-10-15 04:33:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2021-10-15 04:33:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [PatriaYVida, 15NovCuba, LibertadParaCuba]
-2021-10-15 04:33:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
-2021-10-15 04:33:44 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
-2021-10-15 04:33:44 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [PatriaYVida, 15NovCuba, LibertadParaCuba]
-2021-10-15 04:34:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
-2021-10-15 04:34:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
-2021-10-15 04:34:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #Cuba #SantiagoDeCuba
-
-El santiaguero Eloy fue citado y amenazado por la SE por ser firmante de la carta para marchar el #15N.
-Se recorrerá desde Parque de Céspedes hasta Plaza de Marte, por la calle Aguilera, Hora:2:00pm.
-https://t.co/e9NNb4XzZf
-
-#LibertadParaCuba
-#C40
-
-Dale RT https://t.co/pyBb66ugLD
-2021-10-15 04:34:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @joelglez74: Otra Mariana de estos tiempos.
-#Cuba merece LIBERTAD.
-
-#EnCubaHayUnaDictadura 
-#15NCuba
+Sigan a @rafrsr https://t.co/K0GSuFN5WE
+2021-10-20 22:36:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @cubano4freedom: En menos de 24h han expulsado de su centro laboral a 2 profesionales, por el solo hecho de pensar diferente y querer un…
+2021-10-20 22:36:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @luis_yerly: Este chivato del CDR y de las brigadas de respuesta rápida nos ha hecho actos de repudio ha varios activistas en Las Tunas!…
+2021-10-20 22:36:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @QvanoSoy: Que poco argumento tienen los comunistas 🤦🏻‍♂️, le pones una verdad como templo que ni ellos pueden evadir y ¡ SAS !, Vas blo…
+2021-10-20 22:36:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JuanCle23251290: Debemos ver quienes son las dos fiscales holguineras que citaron a @Dr_ManuelG93 .Hacerles saber que todo tiene consec…
+2021-10-20 22:37:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @dqba: No esperes la marcha del #15NovCuba ACTÚA HOY  la dictadura asesina De Castro-@DiazCanelB  es nuestro objetivo. La libertad y pro…
+2021-10-20 22:37:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FITNESSWILL20: Dr .Manuel Guerra , acaba de recibir una citación de la Fiscalía Provincial en Holguín para mañana 21 de octubre. Fue se…
+2021-10-20 22:38:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @cubano4freedom: En menos de 24h han expulsado de su centro laboral a 2 profesionales, por el solo hecho de pensar diferente y querer un…
+2021-10-20 22:38:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ilianahcuba: La Patria es Cuba, el comunismo es una ideología extranjera que ha invadido el país, hay que expulsarla, los que se acogen…
+2021-10-20 22:39:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RoannyLL: El comunismo envenenó el suelo fértil de la isla de #Cuba, en dictadura no florecen sueños de un futuro feliz, se precisa de…
+2021-10-20 22:39:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AnaRamo70233909: Muchos medios anunciaron #PatriaYVida como la canción ke incomodó al régimen cubano. Pero la realidad es ke lo desquic…
+2021-10-20 22:39:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @abdala_cuba: Es imposible que un artista esté en La Bienal de La Habana sabiendo que la dictadura amordaza, persigue y encierra a los a…
+2021-10-20 22:39:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RoannyLL: El comunismo envenenó el suelo fértil de la isla de #Cuba, en dictadura no florecen sueños de un futuro feliz, se precisa de…
+2021-10-20 22:39:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TheCodice: @CubaLiborio @GHNordelo5 ¿De dónde coño los #CDRCuba sacan dinero para donar licuadoras? #PatriayVida #ACubaponleLibertad
+2021-10-20 22:39:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Vaya potencia médica que tenemos en #Cuba que ni licuadoras para sus pacientes. 🤦🏻‍♂️ 
+#AbajoLaDictadura #SOSCuba @GHNorde…
+2021-10-20 22:39:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @grisel8204: Primero lo expulsan al DrManuel y luego lo citan .. sin explicar el motivo... EN CUBA NO SE PUEDE PENSAR DIFERENTE .... #SO…
+2021-10-20 22:39:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Alexanva: #15NovCuba 
+#AbajoLaDictaduraCastrista 
+#SOSCuba 
+#PatriaYVida https://t.co/jGi1wHTYdN
+2021-10-20 22:40:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mjorgec1994: ⚠️⚠️Acaban de expulsar al doctor Manuel Guerra de su centro de trabajo... es el segundo profesional expulsado en menos de…
+2021-10-20 22:40:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @DanielitoTriana: La expulsión del @Dr_ManuelG93 de su centro de trabajo es escandalosa. En Cuba rige un estado de APARTHEID POLÍTICO no…
+2021-10-20 22:40:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
+2021-10-20 22:40:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RoannyLL: El comunismo envenenó el suelo fértil de la isla de #Cuba, en dictadura no florecen sueños de un futuro feliz, se precisa de…
+2021-10-20 22:41:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Nadir Martin Perdomo. Padre de familia, amante del fútbol. Salió a manifestarse pacíficamente por las call…
+2021-10-20 22:41:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @DisleidyConcep1: @Elprofe99938765 @MayraDo57466678 @PCC_Cuba @mbachelet @Pontifex_es @JosepBorrellF @CNNEE @nytimeses @dw_espanol @ABC…
+2021-10-20 22:41:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RONINY28: La doctrina del terror en Cuba va a terminar por dejarnos una sola salida. Mientras más presión ejerzan sobre la sociedad civ…
+2021-10-20 22:41:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Hoy los niños celebran sus cumpleaños sin sus padres. Por qué? Porque una dictadura así lo decidió. Y los hijos de los d…
+2021-10-20 22:41:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Libertad12021: Estoy tan cansada del comunismo. Esta semana an despedido a dos profecionales de su puesto. Un profesor y un doctor. Est…
+2021-10-20 22:41:52 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JuanCle23251290: Debemos ver quienes son las dos fiscales holguineras que citaron a @Dr_ManuelG93 .Hacerles saber que todo tiene consec…
+2021-10-20 22:42:10 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @dqba: No esperes la marcha del #15NovCuba ACTÚA HOY  la dictadura asesina De Castro-@DiazCanelB  es nuestro objetivo. La libertad y pro…
+2021-10-20 22:42:15 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @PedroPe46145034: @TwiterCuba @ElAngelMemero @AngelMemer0 @FCuajoPlus @memetroll20 @Memero_Daniel @LTalandraca @DanielPrzRm @MEMELLO13 @…
+2021-10-20 22:42:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @71cubanita1: #15NCuba 
+CADA VEZ TENEMOS MAS RAZONES PARA TUMBAR A LA DICTADURA
+#AbajoElComunismo
+2021-10-20 22:42:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @liberencuba: #15NovCuba yò estoy lista para marchar el 15 de Noviembre por la libertad de mi Cuba y tù? #todosomosarchipielago #CubaEsU…
+2021-10-20 22:43:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Atención!!! #SOSCuba #EnCubaHayUnaDictadura #EnCubaHayPresosPoliticos #YoQuieroUnCambio #UnidosPorCubaLibre #15NCuba #ACubaPonleLibertad
+2021-10-20 22:43:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @dqba: No esperes la marcha del #15NovCuba ACTÚA HOY  la dictadura asesina De Castro-@DiazCanelB  es nuestro objetivo. La libertad y pro…
+2021-10-20 22:43:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ilianahcuba: En plena calle 23, Vedado, la decadencia de los 500 años de La Habana, ya 502 este próximo noviembre #QueFulaEsLaContinuid…
+2021-10-20 22:43:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FITNESSWILL20: Dr .Manuel Guerra , acaba de recibir una citación de la Fiscalía Provincial en Holguín para mañana 21 de octubre. Fue se…
+2021-10-20 22:43:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @yoandrisunpacu: EL 15 Noviembre todos a las calle pedir el fin de la dictadura asesina del puesto a dedo Díaz-Canel #PatriaYVida  #SOSC…
+2021-10-20 22:43:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
+2021-10-20 22:44:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mjorgec1994: ⚠️⚠️Acaban de expulsar al doctor Manuel Guerra de su centro de trabajo... es el segundo profesional expulsado en menos de…
+2021-10-20 22:44:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @wrr2 @LuisMorlote @AbelPrieto11 @UNEAC_online @JGomezTriana @YanetCabreraB @RosyAmaro_CVI @AriDeCuba @CVInternacional @CubaCultura @CasAmericas ¡Waldo arrastra'o! #AbajoLaDictadura
+2021-10-20 22:44:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @cubangirlj: #EnCubaHayUnaDictadura
+2021-10-20 22:44:36 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @TwiterCuba Deja que sigan fajados entre los durakitos y la rochelle 😅😅😅 Tu cuenta es la mejor 🇨🇺🇨🇺🇨🇺👍🏻👍🏻👍🏻
+#PatriaYVida #15NCuba #SOSCuba
+2021-10-20 22:44:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @DanielitoTriana: La expulsión del @Dr_ManuelG93 de su centro de trabajo es escandalosa. En Cuba rige un estado de APARTHEID POLÍTICO no…
+2021-10-20 22:44:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Esta gente necesita ayuda… ellos solos y desarmados, no pueden enfrentar la tiranía que los golpea, somete, encierra y desaparece. El mundo no puede seguir mirando a otra parte.
+2021-10-20 22:45:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @alesanzal65: Mira @cubamartiana, el @CubaMINREX  tiene un equipo d #DDHH 😳
+Imagino q sea para monitorear las violaciones en #USA🇺🇸, #Ch…
+2021-10-20 22:45:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Hoy tuve que oír a una amiga llorar porque tuvo q acostar a su hija sin darle su vaso de leche......No puedo más....sin humor,sin frase pseudo inteligente..#15NCuba ,#PatriaYVida #PatriayLibertad
+2021-10-20 22:45:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ArmandoDguezGle: #15NovCuba #15Nov https://t.co/BiCRFLQj8o
+2021-10-20 22:45:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Mira @fernandorojas_6 para que lo incluyas en la serie: 
+"Nuestros Artistas". 
+👉 Emilio Frias (El Niño) 
+#AbajoLaDictadura…
+2021-10-20 22:45:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Kmikc90: #EnCubaHayUnaDictadura pura y dura #AbajoElComunismo #AbajoElPCC @ONU_es @parlamentoUE @mbachelet @CIDH @ONU_derechos @antonio…
+2021-10-20 22:45:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
+2021-10-20 22:46:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FITNESSWILL20: Dr .Manuel Guerra , acaba de recibir una citación de la Fiscalía Provincial en Holguín para mañana 21 de octubre. Fue se…
+2021-10-20 22:46:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @whatdafaqshow no vengas a Cuba, o si lo haces ven el mismo #15NovCuba para que cubras la marcha cívica, te esperamos #Mox
+¿Por qué no hac s un programa sobre lo que pasa en #Cuba?
+#LibertadParaElPuebloDeCuba
+2021-10-20 22:46:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TheCodice: @JessHRivas1 @AhiPoeta Estuvo peor en otras épocas y la juventud logró el cambio. No será diferente esta vez, ya Cuba desper…
+2021-10-20 22:46:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @abdala_cuba: Es imposible que un artista esté en La Bienal de La Habana sabiendo que la dictadura amordaza, persigue y encierra a los a…
+2021-10-20 22:46:38 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
+2021-10-20 22:46:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @pagina_siete @ArceZaconeta HAGA LO QUE HAGA NO PODRA BORRAR EL FRAUDE #CUBA #PatriaYVida BOLIVIA ESTA EN CONTRA DEL COMUNISMO..!! #CubaLibreYSoberana https://t.co/gJ4dZOateO
+2021-10-20 22:47:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @GHNordelo5: Una consigna de #Fidel que caló tan hondo, que hasta algunos fidelistas arrepentidos todavía la repiten. #PatriaYVida #Cuba…
+2021-10-20 22:47:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Aquí tenemos una de las fiscales que entrevistará a @Dr_ManuelG93 Por pensar diferente y querer #PatriayVida Su nombre Nadieska Núñez Gumila de Patria o Muerte . Será una entrevista para discutir de política supongo no? https://t.co/tCzS38sfZ4
+2021-10-20 22:47:15 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
+2021-10-20 22:47:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
+2021-10-20 22:47:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Mira @fernandorojas_6 para que lo incluyas en la serie: 
+"Nuestros Artistas". 
+👉 Emilio Frias (El Niño) 
+#AbajoLaDictadura…
+2021-10-20 22:47:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Mira @fernandorojas_6 para que lo incluyas en la serie: 
+"Nuestros Artistas". 
+👉 Emilio Frias (El Niño) 
+#AbajoLaDictadura…
+2021-10-20 22:47:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ilianahcuba: El periodista #EstebanRodriguez se declara en huelga de hambre exigiendo que se haga justicia con su caso, más de 5 meses…
+2021-10-20 22:48:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
+2021-10-20 22:48:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @71cubanita1: #15NCuba 
+CADA VEZ TENEMOS MAS RAZONES PARA TUMBAR A LA DICTADURA
+#AbajoElComunismo
+2021-10-20 22:48:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @hpesito_: @UKinCuba @CubaMINREX https://t.co/xRTSVOciZp aki tienes tus derechos
+2021-10-20 22:48:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Arestop @CubaLiborio @GHNordelo5 Yo puse las fotos de las que encontré en casa. Me faltan como tres más que no las veo. Que miserables son estos comunistas 
+#ComunismoEsMiseria 
 #PatriaYVida
-2021-10-15 04:35:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FHPLuruguay: #SosCuba
+2021-10-20 22:49:32 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FITNESSWILL20: Fernando Vazquez Guerra miembro de la #UNPACU en Camaguey Cuba acaba de ser detenido y llevado al cuartel de la segurida…
+2021-10-20 22:49:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RoannyLL: El comunismo envenenó el suelo fértil de la isla de #Cuba, en dictadura no florecen sueños de un futuro feliz, se precisa de…
+2021-10-20 22:50:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
+2021-10-20 22:50:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
+2021-10-20 22:50:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @YandyPDCuba: El pais no está para darse ese lujo. 😡🤦🏻‍♂️
+2021-10-20 22:50:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @dqba: No esperes la marcha del #15NovCuba ACTÚA HOY  la dictadura asesina De Castro-@DiazCanelB  es nuestro objetivo. La libertad y pro…
+2021-10-20 22:50:33 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @grisel8204: Primero lo expulsan al DrManuel y luego lo citan .. sin explicar el motivo... EN CUBA NO SE PUEDE PENSAR DIFERENTE .... #SO…
+2021-10-20 22:50:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @ReinaldoEchev11 @JuantonioFdez Gentuza.
+#AbajoLaDictadura
 #PatriaYVida
-#ElParoVa 🇨🇺
+2021-10-20 22:51:27 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ilianahcuba: El periodista #EstebanRodriguez se declara en huelga de hambre exigiendo que se haga justicia con su caso, más de 5 meses…
+2021-10-20 22:51:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @PabliVsFakeNews @Soocky85 @norges14 @SwedeninCU @NLinCuba @ILGAWORLD @USEmbCuba @WHAAsstSecty @embAntony @UKinCuba La de pagar por los crimenes que cometen. Tanto paga el que mata la vaca como el que le sujeta las patas 
+#AbajoElComunismo 
+#AbajoLaDictaduraCastrista 
+#PatriaYVida 
+#LosViejosNoSueñan
+#ElFuturoEsDeLosJovenes
+2021-10-20 22:52:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
+2021-10-20 22:52:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
+2021-10-20 22:52:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @grisel8204: Primero lo expulsan al DrManuel y luego lo citan .. sin explicar el motivo... EN CUBA NO SE PUEDE PENSAR DIFERENTE .... #SO…
+2021-10-20 22:52:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #VivaCubaLibre #PatriaYVida #15NCuba
+2021-10-20 22:52:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @observacuba: A 100 días del crimen: ¿llegará la justicia? No a la impunidad. La vida de un cubano importa. #11J #15NovCuba
 
-https://t.co/9iFhsTA5NT
-2021-10-15 04:36:36 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @uwinli: Hagamos que la Libertad no sea un sueño,sino nuestra Bandera.
-#RestituciónC40 
-#15NovCuba 
-#LibertadParaCuba https://t.co/levbk…
-2021-10-15 04:36:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ArbolInvertido: 🇨🇺 El régimen de #Cuba acude a la  militarización y al descrédito como  respuesta a la marcha del #15N.
-Vea los detalle…
-2021-10-15 04:36:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @uwinli: Hagamos que la Libertad no sea un sueño,sino nuestra Bandera.
-#RestituciónC40 
-#15NovCuba 
-#LibertadParaCuba https://t.co/levbk…
-2021-10-15 04:38:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @RolandoChamizo @AriDeCuba @iroelsanchez No se ve el fruto decesos trabajos, por eso hay que marchar#NoMasMentiras #NoMasDictadura #PatriaYVida #CubaUnida #ElPuebloLoQueQuiereEsLibertad #ElCambioEsYa #ManifestarseEsUnDerecho #DerechoATenerDerechos #15NCuba #AbajoElPCC #TodosSomosArchipielago
-2021-10-15 04:39:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @uwinli: Hagamos que la Libertad no sea un sueño,sino nuestra Bandera.
-#RestituciónC40 
-#15NovCuba 
-#LibertadParaCuba https://t.co/levbk…
-2021-10-15 04:39:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @uwinli: Hagamos que la Libertad no sea un sueño,sino nuestra Bandera.
-#RestituciónC40 
-#15NovCuba 
-#LibertadParaCuba https://t.co/levbk…
-2021-10-15 04:39:33 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @PadresFundador1 @AriDeCuba @iroelsanchez Si, si la miseria y seguir viendo a cuerpo de rey explotando al pueblo si, eso si les convence #AbajoElPCC #NoMasMentiras #NoMasDictadura #PatriaYVida
-2021-10-15 04:42:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #15NovCuba
+(Ver docume…
+2021-10-20 22:53:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RoannyLL: El comunismo envenenó el suelo fértil de la isla de #Cuba, en dictadura no florecen sueños de un futuro feliz, se precisa de…
+2021-10-20 22:53:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @grisel8204: Expulsan al @Dr_ManuelG93
+De sus funciones en Cuba por pensar diferente y lo citan a fiscalía sin explicar los motivos @OEA…
+2021-10-20 22:53:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mjorgec1994: ⚠️⚠️Acaban de expulsar al doctor Manuel Guerra de su centro de trabajo... es el segundo profesional expulsado en menos de…
+2021-10-20 22:54:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Mira @fernandorojas_6 para que lo incluyas en la serie: 
+"Nuestros Artistas". 
+👉 Emilio Frias (El Niño) 
+#AbajoLaDictadura…
+2021-10-20 22:54:15 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Kmikc90: #EnCubaHayUnaDictadura pura y dura #AbajoElComunismo #AbajoElPCC @ONU_es @parlamentoUE @mbachelet @CIDH @ONU_derechos @antonio…
+2021-10-20 22:55:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Kmikc90: #EnCubaHayUnaDictadura pura y dura #AbajoElComunismo #AbajoElPCC @ONU_es @parlamentoUE @mbachelet @CIDH @ONU_derechos @antonio…
+2021-10-20 22:55:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @mbachelet 
+@Almagro_OEA2015 
+@ONUMujeres 
+@charanzova 
+SRA BACHELET ESTAS JOVENES NO LES RECUERDAN SUS TIEMPOS DE ACTIVISMO CONTRA LA DICTADURA DE PINOCHET??
+SRA BACHELET RENUNCIE O PONGASE DEL LADO DEL PUEBLO CUBANO
 #EnCubaHayUnaDictadura 
-⚠️Definitivamente y ya lo tengo bien comprobado, está P|@T@FORM@ con su inteligencia artificial y algoritmo protege a estos grandísimos HP
-Con algunos hashtag y nombres le bajan la visualización a los twitts https://t.co/2Aufoiz9hG
-2021-10-15 04:43:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @joelglez74: Otra Mariana de estos tiempos.
-#Cuba merece LIBERTAD.
-
-#EnCubaHayUnaDictadura 
-#15NCuba
-#PatriaYVida
-2021-10-15 04:45:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Manumisin1: #15NovCuba
-#EnCubaHayUnaDictadura 
-⚠️Definitivamente y ya lo tengo bien comprobado, está P|@T@FORM@ con su inteligencia art…
-2021-10-15 04:47:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @AriDeCuba Entendí, EL COMUNISMO SE ACABÓ 👏👏👏👏👏 YA SOMOS LIBRES #NoMasMentiras #NoMasDictadura #PatriaYVida #TodosSomosArchipielago 🇨🇺🇨🇺🇨🇺🇨🇺🇨🇺🇨🇺🇨🇺
-2021-10-15 04:47:53 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pea_2021: @InesMChapman Avanzaaa???? 😂😂😂😂😂 Para atrás como el cangrejo 🦀 #SOSCuba #SocialismoEsMiseria #PatriaYVida #EnCubaHayUnaDictad…
-2021-10-15 04:47:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AngelRCuba: Únete al Challenge #RompoTufotoFidel por la libertad del joven Roberto Pérez Fonseca qué será condenado a 8 años de prisión…
-2021-10-15 04:48:08 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pedrop_pena: @JustinTrudeau Monsieur Trudeau et quand vous allez parler de la situation à Cuba. La dictature avec laquelle votre gouver…
-2021-10-15 04:49:10 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @jguaido: La lucha de los pueblos en resistencia no será en vano, y los esfuerzos por recuperar la democracia trascienden fronteras.
-
-Ho…
-2021-10-15 04:49:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @ultrackdj Ultrack entendemos tu punto, claro q quisiera agarrar un palo y darle a los comunistas. Pero ellos los q estan dentro eligieron la marcha cívica y pacífica, saben a lo q se exponen. Los apoyo y espero q tu también estés a nuestro lado. #PatriayVida
-2021-10-15 04:49:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @jguaido: La lucha de los pueblos en resistencia no será en vano, y los esfuerzos por recuperar la democracia trascienden fronteras.
-
-Ho…
+#AbajoElComunismo 
+#AbajoElPCC 
+#15NCu
+2021-10-20 22:55:53 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Mira @fernandorojas_6 para que lo incluyas en la serie: 
+"Nuestros Artistas". 
+👉 Emilio Frias (El Niño) 
+#AbajoLaDictadura…
+2021-10-20 22:56:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Hoy mi hermano Roberto Pérez Fonseca se entero de su sentencia de 10 años. El es un mambí,#SOSCuba #PatriaYVida #LibertadParaLosPresosPoliticos #RobertoPerezFonseca
+2021-10-20 22:57:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @juliosanmartine @IsmaelCuba5 @RosarioPentn1 @RockyCuba @Patriot18708865 @Joven_Comunista @JosueDeCuba @zurdoBo7 @DiazCanelB @PresidenciaCuba @LizAlexa15 @BettyLaRosa12 @BrownSugarNic @FalconCuervo2 @BrendaGlezA1 @YanetDCuba2020 @yordanyhabana @Yarahe91 @MarbeniaS @mbachelet @HumbertoCHernn2 @MilagrosXCuba @Ephj20 @kitty_894 @nellarojasm @LizCubaFenix @AlejandroRojit2 @YuryHdz08 Mucha memoria..#EnCubaHayUnaDictadura https://t.co/AcT0jFqbul
+2021-10-20 22:57:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Luego entonces no tienen dinero para comprar medicinas y alimentos. Hipócritas. #EnCubaHayUnaDictadura
+2021-10-20 22:57:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FITNESSWILL20: Dr .Manuel Guerra , acaba de recibir una citación de la Fiscalía Provincial en Holguín para mañana 21 de octubre. Fue se…
+2021-10-20 22:57:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ilianahcuba: Además del llamado del #15NCuba salen otros llamados a la sociedad civil, del 10 al 20 de octubre se convoca a la Jornada…
+2021-10-20 22:57:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Kmikc90: #EnCubaHayUnaDictadura pura y dura #AbajoElComunismo #AbajoElPCC @ONU_es @parlamentoUE @mbachelet @CIDH @ONU_derechos @antonio…
+2021-10-20 22:57:47 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Vaya potencia médica que tenemos en #Cuba que ni licuadoras para sus pacientes. 🤦🏻‍♂️ 
+#AbajoLaDictadura #SOSCuba @GHNorde…
+2021-10-20 22:58:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Mira @fernandorojas_6 para que lo incluyas en la serie: 
+"Nuestros Artistas". 
+👉 Emilio Frias (El Niño) 
+#AbajoLaDictadura…
+2021-10-20 22:58:15 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ArmandoDguezGle: #15NovCuba #15Nov https://t.co/BiCRFLQj8o
+2021-10-20 22:58:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Carlos Acosta no se puede extender en la 3ra pregunta por obvias razones que todos conocemos.  👇👇👇 🤦🏻‍♂️
+#AbajoLaDictadura…
+2021-10-20 22:58:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: ¿Alguien sabe que fue de la vida de la cámara que pusieron frente a la casa de @LMOAlcantara en San Isidro? 
+#AbajoLaDicta…
+2021-10-20 22:58:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ilianahcuba: La Patria es Cuba, el comunismo es una ideología extranjera que ha invadido el país, hay que expulsarla, los que se acogen…
+2021-10-20 22:59:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mjorgec1994: ⚠️⚠️Acaban de expulsar al doctor Manuel Guerra de su centro de trabajo... es el segundo profesional expulsado en menos de…
+2021-10-20 22:59:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RoannyLL: El comunismo envenenó el suelo fértil de la isla de #Cuba, en dictadura no florecen sueños de un futuro feliz, se precisa de…
+2021-10-20 22:59:36 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CeibaMambisa: Los militares y las clarias son parte del rebaño maltratado por la dictadura.
+Todos juntos podemos hacer una #Cuba mejor.…
+2021-10-20 22:59:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @armando_kalos @Lemos9988 @Dr_ManuelG93 @DavidMtnezEsp Conmigo pueden contar #UnidosPorCubaLibre  #15NovCuba
+2021-10-20 22:59:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @grisel8204: Primero lo expulsan al DrManuel y luego lo citan .. sin explicar el motivo... EN CUBA NO SE PUEDE PENSAR DIFERENTE .... #SO…
+2021-10-20 23:00:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Nadir Martin Perdomo. Padre de familia, amante del fútbol. Salió a manifestarse pacíficamente por las call…
+2021-10-20 23:00:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Mira @fernandorojas_6 para que lo incluyas en la serie: 
+"Nuestros Artistas". 
+👉 Emilio Frias (El Niño) 
+#AbajoLaDictadura…
+2021-10-20 23:00:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FITNESSWILL20: Fernando Vazquez Guerra miembro de la #UNPACU en Camaguey Cuba acaba de ser detenido y llevado al cuartel de la segurida…
+2021-10-20 23:00:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @dqba: No esperes la marcha del #15NovCuba ACTÚA HOY  la dictadura asesina De Castro-@DiazCanelB  es nuestro objetivo. La libertad y pro…
+2021-10-20 23:01:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @FITNESSWILL20: Dr .Manuel Guerra , acaba de recibir una citación de la Fiscalía Provincial en Holguín para mañana 21 de octubre. Fue se…
+2021-10-20 23:01:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @grisel8204: Primero lo expulsan al DrManuel y luego lo citan .. sin explicar el motivo... EN CUBA NO SE PUEDE PENSAR DIFERENTE .... #SO…
+2021-10-20 23:01:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @grisel8204 @DiazCanelB @MINSAPCuba En ningún país un ciudadano acepta una citación sin que le expliquen el motivo.
+Ni te pueden detener ni hacerte nada sin darte explicaciones. Cuba es el único país donde no tienes derecho a nada, sólo a obedecer. Es abusivo
+#EnCubaHayUnaDictadura
+2021-10-20 23:01:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BettyGuerraPer1: Solo en una dictadura expulsan a un profesional de su puesto de trabajo por no ser leal a los dictadores. Ya basta!…
+2021-10-20 23:02:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @joaco537: #EnCubaHayUnaDictadura #EnCubaHayUnaDictadura #LibertadParaLosPresosPoliticos #LibertadParaLosPresosPoliticos #PaLaCalle15N #…
+2021-10-20 23:02:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: Cuatro estrofas eliminadas del Himno Nacional de #Cuba y aunque parezca increíble, 
+@fernandorojas_6
+ no tuvo que ver con…
+2021-10-20 23:02:53 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AutumnByTheSea: No los dejemos solos 🙏 #LibertadParaLosPresosPoliticos #EnCubaHayUnaDictadura #EnCubaHayPresosPoliticos #YoLosQuieroLib…
+2021-10-20 23:03:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RoannyLL: Las cosas de #Twitter 😂✌️💪
+@tukmila23 y @misumu89 ❤️🇨🇺
+Viva Cuba Libre! 
+Abajo el Comunismo!
+Abajo la Dictadura!
+#EnCubaHayUn…
+2021-10-20 23:03:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: ¿Alguien sabe que fue de la vida de la cámara que pusieron frente a la casa de @LMOAlcantara en San Isidro? 
+#AbajoLaDicta…
+2021-10-20 23:03:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @cubano4freedom: En menos de 24h han expulsado de su centro laboral a 2 profesionales, por el solo hecho de pensar diferente y querer un…
+2021-10-20 23:03:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Estas sonrisas fueron arrebatadas, solo por pensar diferente y salir a manifestarse. Y los hijos de los dirigentes de es…
+2021-10-20 23:04:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Frank_I_: Luego entonces no tienen dinero para comprar medicinas y alimentos. Hipócritas. #EnCubaHayUnaDictadura
+2021-10-20 23:04:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CubaLiborio: ¿Alguien sabe que fue de la vida de la cámara que pusieron frente a la casa de @LMOAlcantara en San Isidro? 
+#AbajoLaDicta…
+2021-10-20 23:04:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ilianahcuba: La Patria es Cuba, el comunismo es una ideología extranjera que ha invadido el país, hay que expulsarla, los que se acogen…
+2021-10-20 23:04:49 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SarayGUribe82: Libertad para Marlon David Batista, y para todos los presos políticos en Cuba! El #15NCuba salgamos a marchar por el cam…
